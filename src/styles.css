@@ -5,7 +5,7 @@
     --secundario: #00DA55;
     --gris:#3B3B3B;
     --blanco:#fff;
-    --negro:#000;
+    --negro:#1e1e1e;
     --gris-claro:#e1e1e1;
 
     --separacion:5rem;
@@ -31,8 +31,8 @@ body{
 }
 
 .contenedor{
-    max-width: 120rem;
-    width: 90%;
+    max-width: 150rem;
+    width: 98%;
     margin: 0 auto;
 }
 
@@ -57,8 +57,115 @@ h3{
 img{
     max-width: 100%;
     display: block;
+    height: auto;
 }
 
+/* Utilidades */
 .text-center{
     text-align: center;
+}
+
+/* Degradados */
+.degradado-verde{
+    color:transparent;
+    background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/*************************/
+.header{
+    background-color: var(--negro);
+    padding: calc(var(--separacion)*3) 0;
+    color:var(--blanco);
+
+}
+
+@media(min-width:768px){
+    .contenido-header{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.texto-header{
+    text-align: center;
+    padding-top: var(--separacion);
+}
+
+@media(min-width:768px){
+    .texto-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+}
+
+.texto-header p{
+    margin:0;
+    
+}
+
+.tagline-producto{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.nombre-producto{
+    font-size: 6rem;
+    margin: 0;
+}
+
+@media(min-width:768px){
+    .nombre-producto{
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+
+.precio-producto span{
+    font-size: 6rem;
+    font-weight: 900;
+
+}
+
+/* Iconos */
+.iconos{
+    /* padding: var(--separacion) 0; */
+    margin:var(--separacion) 0; 
+}
+
+@media(min-width:768px){
+    .iconos{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.icono{
+    text-align: center;
+    margin-bottom: calc(var(--separacion)*1.5);
+}
+
+.icono:last-of-type{
+    margin:0;
+}
+
+@media(min-width:768px){
+    .icono {
+        margin:0;
+    }
+}
+
+.icono img{
+    width: 5rem;
+    margin: 0 auto;
+}
+
+.icono h3{
+    color:var(--primario);
+    text-transform: uppercase;
+    margin-top: calc(var(--separacion)/2);
 }
