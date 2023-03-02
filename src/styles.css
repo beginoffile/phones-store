@@ -31,8 +31,8 @@ body{
 }
 
 .contenedor{
-    max-width: 150rem;
-    width: 98%;
+    max-width: 120rem;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -168,4 +168,29 @@ img{
     color:var(--primario);
     text-transform: uppercase;
     margin-top: calc(var(--separacion)/2);
+}
+
+/* About TechPro */
+.sobre-tech{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primario) 0%), url(../src/assets/images/imagen-mujer.jpg);
+}
+
+.sobre-tech-grid{
+    display: grid;
+    grid-template-rows: repeat(2, 40rem);
+    row-gap: var(--separacion);
+}
+
+.texto-sobre-tech{
+    grid-row: 2/3;
+    color:var(--blanco);
+}
+
+.texto-sobre-tech h2{
+    font-size: 4rem;
+}
+
+.texto-sobre-tech p{
+    font-size: 2rem;
+    line-height: 2;
 }
