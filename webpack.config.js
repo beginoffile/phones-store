@@ -112,15 +112,15 @@ module.exports = (env, argv) =>{
                 display: 'standalone',
                 dir:'',
                 inject:true,
-                start_url: '/',
-                publicPath: '/',                
+                start_url: '.',
+                publicPath: '.',                
                 includeDirectory: false,
                 fingerprints: true,
                 crossorigin: null,                
                 // crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
                 icons: [
                   {
-                    src: path.resolve('src/assets/iconos/javascript.png'),
+                    src: path.resolve('src/assets/iconos/header.png'),
                     sizes: [72, 96, 128, 144, 152, 192, 384, 512] // multiple sizes
                   },
                  
@@ -131,7 +131,7 @@ module.exports = (env, argv) =>{
                 title: 'Mi Webpack App',
                 //filename: "index.html", // output file
                 template: './src/index.html',
-                favicon: './src/assets/iconos/javascript.png'
+                favicon: './src/assets/iconos/header.png'
             }),
 
             
@@ -260,15 +260,15 @@ module.exports = (env, argv) =>{
                 display: 'standalone',
                 dir:'',
                 inject:true,
-                start_url: '/',
-                publicPath: '/',                
+                start_url: '.',
+                publicPath: '.',                
                 includeDirectory: false,
                 fingerprints: true,
                 crossorigin: null,                
                 // crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
                 icons: [
                   {
-                    src: path.resolve('src/assets/iconos/javascript.png'),
+                    src: path.resolve('src/assets/iconos/header.png'),
                     sizes: [72, 96, 128, 144, 152, 192, 384, 512] // multiple sizes
                   },
                  
@@ -279,7 +279,7 @@ module.exports = (env, argv) =>{
                 title: 'Mi Webpack App',
                 // filename: 'index.html',
                 template: './src/index.html',
-                favicon: './src/assets/iconos/javascript.png'                
+                favicon: './src/assets/iconos/header.png'                
             }),            
             
             new MiniCssExtractPlugin({
