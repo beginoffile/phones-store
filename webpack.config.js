@@ -134,7 +134,6 @@ module.exports = (env, argv) =>{
             }),
 
             
-            
             new MiniCssExtractPlugin({
                 filename: '[name].css',
                 ignoreOrder: false
