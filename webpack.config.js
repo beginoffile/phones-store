@@ -116,11 +116,12 @@ module.exports = (env, argv) =>{
                 publicPath: '.',                
                 includeDirectory: false,
                 fingerprints: true,
-                crossorigin: null,                
+                crossorigin: null,     
+                ios:true,
                 // crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
                 icons: [
                   {
-                    src: path.resolve('src/assets/iconos/header.png'),
+                    src: path.resolve('src/assets/iconos/javascript.png'),
                     sizes: [72, 96, 128, 144, 152, 192, 384, 512] // multiple sizes
                   },
                  
@@ -265,10 +266,11 @@ module.exports = (env, argv) =>{
                 includeDirectory: false,
                 fingerprints: true,
                 crossorigin: null,                
+                ios:true,
                 // crossorigin: 'use-credentials', //can be null, use-credentials or anonymous
                 icons: [
                   {
-                    src: path.resolve('src/assets/iconos/header.png'),
+                    src: path.resolve('src/assets/iconos/javascript.png'),
                     sizes: [72, 96, 128, 144, 152, 192, 384, 512] // multiple sizes
                   },
                  
