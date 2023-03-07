@@ -14,8 +14,6 @@ module.exports = (env, argv) =>{
         experiments: {          
             topLevelAwait: true,
           },
-
-
         
 
         output: {
